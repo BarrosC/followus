@@ -1,3 +1,118 @@
 page-home {
 
+    .header-md {
+        height: 25vh;
+
+        &:after {
+            background-image: none;
+        }
+
+        .user-card {
+            margin: 0;
+            width: initial;
+            position: relative;
+            box-shadow: none;
+            height: 100%;
+            border-radius: 0;
+            overflow: visible;
+            background-color: $dark-bg;
+
+            h1 {
+                padding: 15px;
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                // font-size: 2rem;
+                color: white;
+                text-align: center;
+                font-family: 'Maven Pro', sans-serif;
+
+                span {
+                    font-weight: bold;
+                }
+
+                ion-icon {
+                    float: right;
+                    font-size: 2.4rem;
+                }
+            }
+    
+            .blur-bg {
+                background: url(/assets/imgs/user.jpg) no-repeat top center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; 
+                filter: blur(3px);
+    
+                position: absolute;
+                left: -2%;
+                top: -3px;
+                right: 0;
+                height: 100%;
+                width: 104%;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: black;
+                    opacity: .3;
+                }
+            }
+    
+            ion-avatar {
+                overflow: hidden;
+                border-radius: 50%;
+                position: absolute;
+                width: 35vw;
+                height: 35vw;
+                left: 50%;
+                margin-left: -17.5vw;
+                bottom: 0;
+                margin-bottom: -10vw;
+            }
+        }
+    }
+
+    .scroll-content {
+        background-color: $dark-bg;
+    }
+
+    .cards-container {
+        margin-top: -16px;
+        margin-bottom: -16px;
+        border-left: solid 1px white;
+        padding: 35px 0 10px;
+
+        .card {
+            position: relative;
+            overflow: visible;
+
+            &:before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                left: -16px;
+                top: 24px;
+            }
+
+            &:after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background-color: $main;
+                border-radius: 50%;
+                position: absolute;
+                left: -14px;
+                top: 26px;
+            }
+        }
+    }
 }

@@ -6,20 +6,32 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { EventoModalPage } from '../pages/evento-modal/evento-modal';
+import { NovoEventoPage } from '../pages/novo-evento/novo-evento';
+
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    LoginPage,
+    HomePage,
+    EventoModalPage,
+    NovoEventoPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    LoginPage,
+    HomePage,
+    EventoModalPage,
+    NovoEventoPage
   ],
   providers: [
     StatusBar,

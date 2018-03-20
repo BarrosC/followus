@@ -14,3 +14,20 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: 'bariolregular';
+    src: url('/assets/fonts/bariol_regular-webfont.eot');
+    src: url('/assets/fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/bariol_regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/bariol_regular-webfont.woff') format('woff'),
+         url('/assets/fonts/bariol_regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/bariol_regular-webfont.svg#bariolregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.bariol {
+    font-family: 'bariolregular' !important;
+}

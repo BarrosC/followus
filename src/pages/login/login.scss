@@ -1,0 +1,50 @@
+page-login {
+    
+    .fixed-content {
+        background: url(/assets/imgs/login-bg.jpg); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        // position: relative;
+
+        &:after {
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background-color: black;
+            opacity: .6;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .logo-full {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        contain: none;
+        background-color: transparent;
+    }
+
+    .item {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .actions-list {
+
+        .item-inner {
+            padding-right: 0 !important;
+        }
+
+        .label {
+            margin-right: 0;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
